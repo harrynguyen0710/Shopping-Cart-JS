@@ -5,9 +5,10 @@ const {
     getCartSummary,
 } = require('./cart');
 
+
 function displayCart() {
-    const {totalItems, totalPrice} = getCartSummary();
-    console.log(`Total items: ${totalItems}, total price: ${totalPrice}`);
+    const {totalItems, totalPrice} = getCartSummary(); // gets the total of number of items and the total price of the cart
+    console.log(`Total items: ${totalItems}, total price: ${totalPrice}`); // shows the results
 }
 
 
