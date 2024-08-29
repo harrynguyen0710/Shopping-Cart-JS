@@ -11,21 +11,21 @@ function displayCart() {
     console.log(`Total items: ${totalItems}, total price: ${totalPrice}`); // shows the results
 }
 
-
-addProductToCart(1);
+// call function to add a product to the cart, with a param acts as the product id
+addProductToCart(1); 
 addProductToCart(2);
 addProductToCart(3);
 addProductToCart(4);
 
-displayCart();
+displayCart(); // get the cart's information
 
-
+// call function to remove a product to the cart, with a param acts the product id
 removeProductFromCart(5);
 removeProductFromCart(3);
 
-displayCart();
+displayCart(); // get cart's information
 
-clearCart();
+clearCart(); // clear all items in the cart
 
-displayCart();
+displayCart(); // get cart's information
 
