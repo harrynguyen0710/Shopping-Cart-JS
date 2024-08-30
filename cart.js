@@ -46,9 +46,9 @@ process:
     we delete the product, else send an alert 
 */
 const removeProductFromCart = (productId) => {
-    const productIndex = cart.findIndex(item => item.id === productId);
+    const productIndex = cart.findIndex(item => item.id === productId); // find the id of the product
     
-    if (productIndex !== -1) {
+    if (productIndex !== -1) { // if it doesn't exist in the cart, the index will be -1
         cart.splice(productIndex, 1);
         console.log(`Removed successfully`);
     } else {
@@ -62,7 +62,7 @@ output: the total price of the cart
 process: iterate through the cart, get the total price by multiply the price with the quantity
 */
 const getTotalPrice = () => {
-    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0); // sum of each product is quantity * price
 };
 
 
